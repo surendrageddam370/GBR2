@@ -1,0 +1,36 @@
+<html>
+
+    <style>
+        
+        h1 {text-align: center;
+        position:absolute;top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        }
+        p {text-align: center;}
+        div {text-align: center;}
+        form {text-align: center;
+            position:absolute;top:50%;
+            left:50%;
+            transform:translate(-350%,250%);}
+        a {text-align: center;
+            position:absolute;top:50%;
+            left:50%;
+            transform:translate(350%,250%);}
+        </style>
+<h1>మీరు "{{item}}" ని తీసివేయలనుకుంటునారా???</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="submit" class="btn btn-danger" value="అవును">
+
+</form>
+<form>
+    <a href="{% url 'base' %}">
+        <input type="button"  value = "వద్దు" class="btn btn-outline-warning">
+    </a>
+</form>
+
+</html>
+
+

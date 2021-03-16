@@ -1,0 +1,228 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>𝙂𝘽𝙍 𝙀𝙉𝙏𝙀𝙍𝙋𝙍𝙄𝙎𝙀𝙎</title>
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:400' %}" rel="stylesheet" />    
+	<link href="{% static 'css/templatemo-style.css' %}" rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="{% static 'img/gallery/GBR.jpeg' %}">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<a href="https://www.youtube.com/channel/UCdTvwwb4WHThizu32IljmFQ"> <img src="{% static 'img/gbr.jpg' %}" alt="Logo" class="tm-site-logo" /> </a>
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">GBR ENTERPRISES</h1>
+								<h6 class="tm-site-description">సీలింగ్ మెటీరియల్స్</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="{% url 'home' %}" class="tm-nav-link active">Home</a></li>
+								{% if user.is_authenticated %}
+									<li class="tm-nav-li"><a href="{% url 'login' %}" class="tm-nav-link">Log in</a></li>
+								{% else %}
+
+									<li class="tm-nav-li"><a href="{% url 'login' %}" class="tm-nav-link">Log in </a></li>
+								{% endif %}
+								<li class="tm-nav-li"><a href="{% url 'register' %}" class="tm-nav-link">Register</a></li>
+								<li class="tm-nav-li"><a href="https://www.youtube.com/channel/UCdTvwwb4WHThizu32IljmFQ" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to GBR ENTERPRISES</h2>
+				<p class="col-12 text-center">మా వద్ద : POP షీట్లు, జిప్సం షీట్లు,జిప్సం చానల్స్ ,అన్ని రకముల సీలింగ్ మెటీరియల్స్ హోల్సేల్ రేట్లకే లభించును.</p>
+			</header>
+			
+			
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-pizza" class="tm-gallery-page">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/sheets.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">P.O.P షీట్</h4>
+								<p class="tm-gallery-description">In Stock</p>
+								<p class="tm-gallery-price">Rs.110</p>
+							</figcaption>
+						</figure>
+					</article>
+					
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/patti2.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">పట్టి</h4>
+								<p class="tm-gallery-description">In stock</p>
+								<p class="tm-gallery-price">Rs.115 - Rs.155</p>
+							</figcaption>
+						</figure>
+					</article>
+					
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/batam.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">బాటం</h4>
+								<p class="tm-gallery-description">In stock</p>
+								<p class="tm-gallery-price">Rs.90 - Rs.120</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/pop2.jpeg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">P.O.P బ్యాగ్</h4>
+								<p class="tm-gallery-description">In Stock</p>
+								<p class="tm-gallery-price">Rs.160</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/L.png' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">SPL</h4>
+								<p class="tm-gallery-description">In stock</p>
+								<p class="tm-gallery-price">Rs.58</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/SPL.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">సపోర్ట్ L</h4>
+								<p class="tm-gallery-description">In stock</p>
+								<p class="tm-gallery-price">Rs.48</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/Ultra p.jfif' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">పట్టి(అల్ట్రా)</h4>
+								<p class="tm-gallery-description">In stock</p>
+								<p class="tm-gallery-price">Rs.165</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/ultra b.png' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">బాటం(అల్ట్రా)</h4>
+								<p class="tm-gallery-description">In stock</p>
+								<p class="tm-gallery-price">Rs.105</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/hook.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">ఫ్యాన్ హుక్</h4>
+								<p class="tm-gallery-description">In Stock</p>
+								<p class="tm-gallery-price">Rs.7/inch</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/a bolt.jfif' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">ఎంకర్ బోల్టులు</h4>
+								<p class="tm-gallery-description">In Stock</p>
+								<p class="tm-gallery-price">Rs.3.5/pc</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/screw.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">Star స్క్రూలు</h4>
+								<p class="tm-gallery-description">In Stock</p>
+								<p class="tm-gallery-price">Rs.220/kg</p>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="{% static 'img/gallery/nails.jpg' %}" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">మేకులు</h4>
+								<p class="tm-gallery-description">In Stock</p>
+								<p class="tm-gallery-price">Rs.200/kg</p>
+							</figcaption>
+						</figure>
+					</article>
+				
+					
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						
+						<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=G.B.R%20enterprises,%20Rallakhandrika&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+						
+					</article>
+				</div>
+				</div> <!-- gallery page 1 -->							
+							<p class="col-12 text-center" style="font-size:30px">ఫ్లవర్స్ మరియు బార్డర్స్ తో మీ గృహానికి సీలింగ్ వర్క్ చేయంచబడును.ఇతర డీటైల్స్ కొరకు <a rel="nofollow" href="https://www.youtube.com/channel/UCdTvwwb4WHThizu32IljmFQ">దీనిని క్లిక్ చెయ్యండి.</a>  ధన్యవాదములు.Thank You. </p>
+							
+						
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2021 Debug Dude
+            
+            | Design: <a rel="nofollow" href="https://www.youtube.com/channel/UCdTvwwb4WHThizu32IljmFQ">Debug Dude</a></p>
+		</footer>
+	</div>
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<script src="{% static 'js/parallax.min.js' %}"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
